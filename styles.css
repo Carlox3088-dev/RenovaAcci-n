@@ -1,0 +1,110 @@
+:root {
+    --color-darkest: #1f0a1d;
+    --color-teal: #334f53;
+    --color-green: #45936c;
+    --color-light-green: #9acc77;
+    --color-lightest: #c8f0ae;
+    --color-white: #ffffff;
+}
+
+body {
+    background-color: var(--color-lightest) ;
+    color: var(--color-darkest);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: var(--color-darkest);
+    color: var(--color-lightest);
+    padding: 20px 5%;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-lightest);
+    margin-bottom: 0.2em;
+}
+header h2 {
+    color: var(--color-light-green);
+    margin-top: 0;
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--color-teal);
+    padding: 10px 5%;
+    text-align: center;
+}
+
+nav a {
+    color: var(--color-lightest);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 5%;
+}
+
+section {
+    background-color: var(--color-white);
+    margin: 25px 0;
+    padding: 20px;
+    border-left: 7px solid var(--color-green);
+    border-radius: 7px 50px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: var(--color-teal);
+}
+
+h2 {
+    border-bottom: 2px solid var(--color-light-green);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--color-green);
+}
+
+.accent-highlight {
+    background-color: var(--color-light-green);
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: var(--color-darkest);
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: var(--color-teal);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header, footer, nav, main {
+        padding: 15px 3%;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

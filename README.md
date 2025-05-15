@@ -1,2 +1,2 @@
-# RenovaAcci-n
+# Renova Acción
 Proyecto Escolar Comunitario
